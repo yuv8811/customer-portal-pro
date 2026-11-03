@@ -17,7 +17,7 @@ database.sqlite
 .env.*
 
 
-
+shopify.app.test-app.toml
 
 
 /extensions/*/dist

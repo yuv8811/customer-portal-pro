@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z, type ZodTypeDef } from "zod";
 import type { ExtensionTarget } from "@customer-portal-pro/config-schema";
 import type { ReducedIconType } from "./icons.js";
 
@@ -16,9 +16,11 @@ export interface ComponentDefinition<
   version: string;
   icon: ReducedIconType;
   defaultProps: TProps;
-  propsSchema: z.ZodType<TProps, any, any>;
-  settingsSchema?: z.ZodType<TSettings, any, any>;
+  propsSchema: z.ZodType<TProps, ZodTypeDef, unknown>;
+  settingsSchema?: z.ZodType<TSettings, ZodTypeDef, unknown>;
   supportedTargets: ExtensionTarget[];
   requiredScopes: string[];
   mobileBehavior: MobileBehavior;
 }
+
+export type AnyComponentDefinition = ComponentDefinition<Record<string, unknown>, Record<string, unknown>>;

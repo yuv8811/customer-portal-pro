@@ -1,6 +1,5 @@
 import { describe, it, expect } from "vitest";
 import {
-  PageConfigSchema,
   validatePageConfig,
   safeParsePageConfig,
 } from "@customer-portal-pro/config-schema";
