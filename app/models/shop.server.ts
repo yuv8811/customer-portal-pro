@@ -66,3 +66,4 @@ ShopSchema.methods.setEncryptedAccessToken = function (token: string): void {
 
 export const Shop: Model<IShop> =
   (mongoose.models.Shop as Model<IShop>) || mongoose.model<IShop>("Shop", ShopSchema);
+

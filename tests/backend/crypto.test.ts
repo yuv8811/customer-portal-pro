@@ -26,3 +26,4 @@ describe("Token Encryption & Decryption (AES-256-GCM)", () => {
     expect(() => decryptToken(tampered)).toThrow();
   });
 });
+

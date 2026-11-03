@@ -54,3 +54,4 @@ AccountConfigSchema.index({ shopId: 1, target: 1 });
 export const AccountConfig: Model<IAccountConfig> =
   (mongoose.models.AccountConfig as Model<IAccountConfig>) ||
   mongoose.model<IAccountConfig>("AccountConfig", AccountConfigSchema);
+

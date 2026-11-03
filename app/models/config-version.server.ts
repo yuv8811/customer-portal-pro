@@ -67,3 +67,4 @@ ConfigVersionSchema.index({ shopId: 1, configId: 1, version: 1 }, { unique: true
 export const ConfigVersion: Model<IConfigVersion> =
   (mongoose.models.ConfigVersion as Model<IConfigVersion>) ||
   mongoose.model<IConfigVersion>("ConfigVersion", ConfigVersionSchema);
+

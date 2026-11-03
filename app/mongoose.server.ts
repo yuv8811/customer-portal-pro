@@ -28,3 +28,4 @@ export async function connectMongoose(): Promise<typeof mongoose> {
 }
 
 export default mongoose;
+
