@@ -12,7 +12,8 @@
     }
   },
   "dependencies": {
-    "@customer-portal-pro/config-schema": "workspace:*",
+    "@customer-portal-pro/config-schema": "*",
     "zod": "^3.23.8"
   }
 }
+

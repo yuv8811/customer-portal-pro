@@ -16,8 +16,8 @@ export interface ComponentDefinition<
   version: string;
   icon: ReducedIconType;
   defaultProps: TProps;
-  propsSchema: z.ZodType<TProps>;
-  settingsSchema?: z.ZodType<TSettings>;
+  propsSchema: z.ZodType<TProps, any, any>;
+  settingsSchema?: z.ZodType<TSettings, any, any>;
   supportedTargets: ExtensionTarget[];
   requiredScopes: string[];
   mobileBehavior: MobileBehavior;

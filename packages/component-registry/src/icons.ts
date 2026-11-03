@@ -92,3 +92,4 @@ export type ReducedIconType = z.infer<typeof ReducedIconTypeSchema>;
 export function isValidCustomerAccountIcon(icon: string): icon is ReducedIconType {
   return (REDUCED_ICON_TYPES as readonly string[]).includes(icon);
 }
+

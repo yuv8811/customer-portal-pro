@@ -52,3 +52,4 @@ export const announcementDefinition: ComponentDefinition<AnnouncementProps, Anno
   requiredScopes: [],
   mobileBehavior: "responsive",
 };
+

@@ -31,3 +31,4 @@ export function getAllComponentDefinitions(): ComponentDefinition<any, any>[] {
 export function getComponentsForTarget(target: ExtensionTarget): ComponentDefinition<any, any>[] {
   return getAllComponentDefinitions().filter((def) => def.supportedTargets.includes(target));
 }
+

@@ -47,3 +47,4 @@ export const profileSummaryDefinition: ComponentDefinition<ProfileSummaryProps, 
   requiredScopes: ["customer_account"],
   mobileBehavior: "stack",
 };
+
